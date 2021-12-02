@@ -1,0 +1,26 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "packages/@dicebear/*",
+      "plugins/figma/*",
+      "scripts",
+      "website"
+    ]
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "force-publish": "lerna publish --force-publish"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "dependencies": {
+    "@dicebear/avatars": "^4.9.1",
+    "@dicebear/open-peeps": "^4.9.1",
+    "rarepress": "^0.1.7"
+  }
+}
